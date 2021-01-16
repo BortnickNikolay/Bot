@@ -22,7 +22,7 @@ public class ActivityThirteen extends AppCompatActivity implements OnClickListen
         setContentView(R.layout.activity_thirteen);
 
         Intent intent = getIntent();
-        score = intent.getIntExtra("int score", 0);
+        score = intent.getIntExtra("int score 1", 0);
 
         btnShowAnswerThirteen1 = (Button) findViewById(R.id.btnShowAnswerThirteen1);
         btnShowAnswerThirteen2 = (Button) findViewById(R.id.btnShowAnswerThirteen2);
