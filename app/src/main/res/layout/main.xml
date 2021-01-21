@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/starting_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:background="@drawable/ege_transparent"
+            android:gravity="center"
+            android:text="@string/starting_text"
+            android:textColor="@color/colorBlack"
+            android:textSize="40sp"/>
+
+    <Button
+            android:id="@+id/btnToDescription"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:text="@string/about_ege_title"/>
+
+</LinearLayout>

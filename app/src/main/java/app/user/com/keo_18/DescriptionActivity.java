@@ -4,20 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
+public class DescriptionActivity extends AppCompatActivity implements OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.description);
 
-        findViewById(R.id.btnToDescription).setOnClickListener(this);
+        Button btnGoToExam = findViewById(R.id.btnGoToExam);
+        btnGoToExam.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, DescriptionActivity.class);
+        Intent intent = new Intent(this, ExamActivity.class);
         startActivity(intent);
     }
 }
